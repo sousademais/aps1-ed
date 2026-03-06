@@ -1,0 +1,22 @@
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra -O2
+
+TARGET = teste_lista
+SRC = src/ListaCompras.cpp src/main_test_lista.cpp
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
+
+run20: $(TARGET)
+	./$(TARGET) data/dados_venda_cluster_20.csv
+
+run65: $(TARGET)
+	./$(TARGET) data/dados_venda_cluster_65.csv
+
+run84: $(TARGET)
+	./$(TARGET) data/dados_venda_cluster_84.csv
+
+clean:
+	rm -f $(TARGET)
