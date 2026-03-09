@@ -17,6 +17,6 @@ make
 
 
 mingw32-make
-mingw32-make runlista
+mingw32-make run_lista
 
 mingw32-make run_sim
