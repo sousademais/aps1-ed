@@ -1,4 +1,4 @@
-#include "../include/ListaCompras.hpp"
+#include "listacompras.hpp"
 
 #include <iostream>
 #include <string>
