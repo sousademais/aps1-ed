@@ -42,6 +42,7 @@ Similaridade::Similaridade(const ListaCompras& lista) {
         
         for (int j = 0; j < numClientes; ++j) {
             if (i == j || tamanho_Pi == 0) {
+                // Distancia do cliente para ele mesmo ou caso sem produtos comprados
                 matrizSimilaridade[i][j] = 0.0;
             } else {
                 double intersecao = matrizI[i][j];
