@@ -21,10 +21,15 @@ int main(int argc, char* argv[]) {
         std::cout << "Matriz de similaridade computada com sucesso!\n\n";
 
         // O entregável pede para testar dois clientes quaisquer por índice interno
-        int clientesParaTestar[2] = {0, 1}; // Vamos testar os índices internos 0 e 1
+        int clientesParaTestar[2] = {0, 1}; // testar os índices internos 0 e 1
 
         for (int i = 0; i < 2; ++i) {
             int indiceAlvo = clientesParaTestar[i];
+
+             if (indiceAlvo < 0 || indiceAlvo >= lista.getNumeroClientes()) {
+                std::cout << "Indice invalido: " << indiceAlvo << "\n";
+                continue;
+        }
             int indiceVizinho = sim.getClienteMaisSimilar(indiceAlvo);
 
             std::cout << "--------------------------------------------------\n";

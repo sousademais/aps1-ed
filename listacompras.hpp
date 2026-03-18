@@ -29,6 +29,7 @@ public:
 
     int getIndiceCliente(const std::string& codigoCliente) const;
     int getIndiceProduto(const std::string& codigoProduto) const;
+    int getNumeroClientes() const;
 
     const std::vector<std::string>& getCodigosClientes() const;
     const std::vector<std::string>& getCodigosProdutos() const;

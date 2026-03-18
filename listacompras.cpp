@@ -185,4 +185,8 @@ void ListaCompras::imprimirComprasDoCliente(const std::string& codigoCliente) co
                   << ", cod original = " << codigosProdutos[indiceProduto] << ")\n";
     }
     std::cout << '\n';
+
+int ListaCompras::getNumeroClientes() const {
+    return codigosClientes.size();
+}
 }
